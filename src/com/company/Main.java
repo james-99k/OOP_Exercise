@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 		//bikeClass();
-		//relationship();
+		//inputRelationship();
 		randomRelationshipDisplay();
     }
     public static void bikeClass(){
@@ -21,7 +21,7 @@ public class Main {
 		newBike.onOffice();
 	}
 
-	public static void relationship(){
+	public static void inputRelationship(){
     	System.out.print("Enter a boy's name: ");
 		Scanner boyInput = new Scanner(System.in);
 		Boy boyClass = new Boy();
@@ -48,10 +48,10 @@ public class Main {
 		Boy boyClass = new Boy();
 		boyClass.randomMaleName();
 
-		Girl girlClass = new Girl();
-		girlClass.randomFemaleName();
-
 		Relationship relClass = new Relationship();
 		relClass.randomRelationship();
+
+		Girl girlClass = new Girl();
+		girlClass.randomFemaleName();
 	}
 }
