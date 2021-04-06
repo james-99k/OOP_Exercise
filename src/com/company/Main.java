@@ -5,20 +5,40 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-		//bikeClass();
+		bikeClass();
+		personClass();
 		//inputRelationship();
-		randomRelationshipDisplay();
+		//randomRelationshipDisplay();
     }
     public static void bikeClass(){
+		//with parameter
+		Bike newBikePara = new Bike("Bikey", "James", 100, "Blue");
+
+		System.out.println(newBikePara.name);
+		System.out.println(newBikePara.owner);
+		System.out.println(newBikePara.speed);
+		System.out.println(newBikePara.color);
+
+		System.out.println();
+
+		//without parameter
 		Bike newBike = new Bike();
 
-		newBike.name = "bikey";
-		newBike.owner = "James";
+		newBike.name = "byk";
+		newBike.owner = "bob";
+		newBike.speed = 50;
+		newBike.color = "red";
 
 		System.out.println(newBike.name);
 		System.out.println(newBike.owner);
+		System.out.println(newBike.speed);
+		System.out.println(newBike.color);
+		System.out.println();
+	}
 
-		newBike.onOffice();
+	public static void personClass(){
+    	Person personName = new Person("James", 12);
+    	System.out.println(personName.name + " is " +personName.age +" years old.");
 	}
 
 	public static void inputRelationship(){

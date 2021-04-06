@@ -6,6 +6,17 @@ public class Bike {
     int speed;
     String color;
 
+    public Bike(String name, String owner, int speed, String color) {
+        this.name = name;
+        this.owner = owner;
+        this.speed = speed;
+        this.color = color;
+    }
+
+    public Bike(){
+        System.out.println("Constructor called");
+    }
+
     static boolean office = false;
     static boolean trail = false;
 
