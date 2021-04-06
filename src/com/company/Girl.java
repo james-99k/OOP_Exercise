@@ -1,7 +1,7 @@
 package com.company;
 
 public class Girl {
-    String fName = "Juliet";
-    String lName = "Merimi";
+    String fName;
+    String hobby = "Volley ball";
     int age = 10;
 }

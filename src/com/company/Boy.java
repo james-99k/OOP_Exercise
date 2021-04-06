@@ -1,7 +1,7 @@
 package com.company;
 
 public class Boy {
-    String fName = "Romeo";
-    String lName = "Sivme";
+    String fName;
+    String hobby = "Basket ball";
     int age = 12;
 }
