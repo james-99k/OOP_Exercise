@@ -14,6 +14,6 @@ public class Bike {
     }
 
     public static void ofTrail(){
-
+        System.out.print(" ");
     }
 }

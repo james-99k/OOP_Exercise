@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 		//bikeClass();
-		relationship();
+		//relationship();
+		randomRelationshipDisplay();
     }
     public static void bikeClass(){
 		Bike newBike = new Bike();
@@ -41,5 +42,16 @@ public class Main {
 		System.out.println(girlClass.fName + " is " + girlClass.age + " and likes " + girlClass.hobby);
     	System.out.println(boyClass.fName + " " + relClass.type + " " +girlClass.fName);
 
+	}
+
+	public static void randomRelationshipDisplay(){
+		Boy boyClass = new Boy();
+		boyClass.randomMaleName();
+
+		Girl girlClass = new Girl();
+		girlClass.randomFemaleName();
+
+		Relationship relClass = new Relationship();
+		relClass.randomRelationship();
 	}
 }
