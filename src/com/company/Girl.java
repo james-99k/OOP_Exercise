@@ -3,9 +3,33 @@ package com.company;
 import java.util.Random;
 
 public class Girl {
-    String fName;
-    String hobby = "Volley ball";
-    int age = 10;
+    private String fName;
+    private String hobby = "Volley ball";
+    private int age = 10;
+
+    public String getfName() {
+        return fName;
+    }
+
+    public void setfName(String fName) {
+        this.fName = fName;
+    }
+
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public static void randomFemaleName(){
         String[] names = { "Olivia", "Emma", "Ava", "Sophia", "Isabelle", "Charlotte" };

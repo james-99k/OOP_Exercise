@@ -2,12 +2,12 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main{
 
     public static void main(String[] args) {
-		bikeClass();
-		personClass();
-		//inputRelationship();
+		//bikeClass();
+		//personClass();
+		inputRelationship();
 		//randomRelationshipDisplay();
     }
     public static void bikeClass(){
@@ -45,23 +45,22 @@ public class Main {
     	System.out.print("Enter a boy's name: ");
 		Scanner boyInput = new Scanner(System.in);
 		Boy boyClass = new Boy();
-		boyClass.fName = boyInput.next();
+		boyClass.setfName(boyInput.next());
 
 		System.out.print("Enter a girl's name: ");
 		Scanner girlInput = new Scanner(System.in);
 		Girl girlClass = new Girl();
-		girlClass.fName = girlInput.next();
+		girlClass.setfName(girlInput.next());
 
 		System.out.print("Enter their relationship: ");
 		Scanner relationInput = new Scanner(System.in);
 		Relationship relClass = new Relationship();
-		relClass.type = relationInput.next();
+		relClass.setType( relationInput.next());
 		System.out.println();
 
-		System.out.println(boyClass.fName + " is " + boyClass.age + " and likes " + boyClass.hobby);
-		System.out.println(girlClass.fName + " is " + girlClass.age + " and likes " + girlClass.hobby);
-    	System.out.println(boyClass.fName + " " + relClass.type + " " +girlClass.fName);
-
+		System.out.println(boyClass.getfName() + " is " + boyClass.getAge() + " and likes " + boyClass.getHobby());
+		System.out.println(girlClass.getfName() + " is " + girlClass.getAge() + " and likes " + girlClass.getHobby());
+    	System.out.println(boyClass.getfName() + " " + relClass.getType() + " " +girlClass.getAge());
 	}
 
 	public static void randomRelationshipDisplay(){
